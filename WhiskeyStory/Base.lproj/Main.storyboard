@@ -84,19 +84,6 @@
                                     <rect key="frame" x="43" y="138" width="291" height="94"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-bw-Ioz">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <state key="normal" title="NO">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="240" y="378" width="46" height="30"/>
-                                </variation>
-                                <connections>
-                                    <action selector="moodNO:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="opf-s5-89U"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us9-Ca-rSS">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
@@ -110,6 +97,58 @@
                                     <action selector="moodYES:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="O9W-WH-JKh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-bw-Ioz">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <state key="normal" title="NO">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="240" y="378" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="moodNO:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="opf-s5-89U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh0-PE-1aX">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Shot">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="154" y="240" width="62" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="shotButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="501-f1-ej1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ba6-hY-bdy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Cocktail">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="127" y="431" width="122" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="cocktailButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f7k-pn-IaY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2h-lt-L9O">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="Neat">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="155" y="335" width="67" height="28"/>
+                                </variation>
+                                <connections>
+                                    <action selector="neatButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FHl-iV-lbd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.88627450980392153" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <variation key="default">
@@ -120,8 +159,11 @@
                                 <exclude reference="DUY-6J-Axo"/>
                                 <exclude reference="6tl-fO-aBK"/>
                                 <exclude reference="e5O-v5-S7K"/>
-                                <exclude reference="xwh-bw-Ioz"/>
                                 <exclude reference="us9-Ca-rSS"/>
+                                <exclude reference="xwh-bw-Ioz"/>
+                                <exclude reference="qh0-PE-1aX"/>
+                                <exclude reference="Ba6-hY-bdy"/>
+                                <exclude reference="a2h-lt-L9O"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -132,13 +174,21 @@
                                 <include reference="DUY-6J-Axo"/>
                                 <include reference="6tl-fO-aBK"/>
                                 <include reference="e5O-v5-S7K"/>
-                                <include reference="xwh-bw-Ioz"/>
                                 <include reference="us9-Ca-rSS"/>
+                                <include reference="xwh-bw-Ioz"/>
+                                <include reference="qh0-PE-1aX"/>
+                                <include reference="Ba6-hY-bdy"/>
+                                <include reference="a2h-lt-L9O"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="cocktailButton" destination="Ba6-hY-bdy" id="asK-Ln-eMS"/>
                         <outlet property="currentQuestion" destination="e5O-v5-S7K" id="Eew-Uq-t0E"/>
+                        <outlet property="moodNO" destination="xwh-bw-Ioz" id="z4p-QN-IHu"/>
+                        <outlet property="moodYES" destination="us9-Ca-rSS" id="CVe-KL-tKC"/>
+                        <outlet property="neatButton" destination="a2h-lt-L9O" id="QVJ-NZ-FYP"/>
+                        <outlet property="shotButton" destination="qh0-PE-1aX" id="1fH-tr-lHG"/>
                     </connections>
                 </viewController>
             </objects>
