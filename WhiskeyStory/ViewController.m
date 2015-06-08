@@ -34,6 +34,12 @@ int flavor = 0;
 @property (weak, nonatomic) IBOutlet UIButton *neatButton;
 @property (weak, nonatomic) IBOutlet UIButton *shotButton;
 @property (weak, nonatomic) IBOutlet UIButton *cocktailButton;
+@property (weak, nonatomic) IBOutlet UIButton *sweetButton;
+@property (weak, nonatomic) IBOutlet UIButton *savoryButton;
+@property (weak, nonatomic) IBOutlet UIButton *smokyButton;
+@property (weak, nonatomic) IBOutlet UIButton *spicyButton;
+@property (weak, nonatomic) IBOutlet UIButton *overproofButton;
+@property (weak, nonatomic) IBOutlet UIImageView *whiskeyImage;
 
 
 @end
@@ -44,6 +50,7 @@ int flavor = 0;
     [super viewDidLoad];
     
     [self hideDrinkType];
+    [self hideFlavors];
     
     self.currentQuestion.text = @"Are you in the mood for whiskey?";
     
@@ -65,10 +72,7 @@ int flavor = 0;
         switch (drinkType) {
                 
             case 1: //shots
-                shots = YES;
-                [self hideDrinkType];
                 
-                self.currentQuestion.text = @"How hard are you going tonight?.";
                 
                 if (wasted) {
                     //SHOTS SHOTS SHOTS
@@ -79,8 +83,6 @@ int flavor = 0;
                 
                 break;
             case 2: //neat
-                neat = YES;
-                [self hideDrinkType];
                 
                 switch (flavor) {
                     case 1: //sweet
@@ -124,14 +126,46 @@ int flavor = 0;
 //sets drink types when button is pressed
 - (IBAction)shotButton:(id)sender {
     drinkType=1;
+    shots = YES;
+    [self hideDrinkType];
+    self.currentQuestion.text = @"How hard are you going tonight?.";
+    //show shot options
 }
 
 - (IBAction)neatButton:(id)sender {
     drinkType=2;
+    neat = YES;
+    
+    [self hideDrinkType];
+    [self showFlavors];
+    
+    self.currentQuestion.text = @"Which flavor would you like?";
+    
 }
 - (IBAction)cocktailButton:(id)sender {
     drinkType=3;
 }
+
+//methods when flavor is chosen
+- (IBAction)sweetButton:(id)sender {
+    [self hideFlavors];
+    
+    self.currentQuestion.text = @"Four Roses \n Maker's Mark \n Jameson 18";
+    
+    //shows picture of whiskey
+    self.whiskeyImage.image = [UIImage imageNamed:@"sweetimage.png"];
+    [self.view addSubview:self.whiskeyImage];
+    
+}
+- (IBAction)savoryButton:(id)sender {
+}
+- (IBAction)smokyButton:(id)sender {
+}
+- (IBAction)spicyButton:(id)sender {
+}
+- (IBAction)overproofButton:(id)sender {
+}
+
 
 //methods to show and hide buttons
 -(void)hideYesNo {
@@ -151,8 +185,33 @@ int flavor = 0;
     self.cocktailButton.hidden=NO;
 }
 
--(void)drinkTypeSwitcher {
+-(void)showFlavors {
+    self.sweetButton.hidden=NO;
+    self.savoryButton.hidden=NO;
+    self.smokyButton.hidden=NO;
+    self.spicyButton.hidden=NO;
+    self.overproofButton.hidden=NO;
     
 }
+
+-(void)hideFlavors {
+    self.sweetButton.hidden=YES;
+    self.savoryButton.hidden=YES;
+    self.smokyButton.hidden=YES;
+    self.spicyButton.hidden=YES;
+    self.overproofButton.hidden=YES;
+}
+
+//Reset app
+//- (IBAction)resetButton:(id)sender {
+//    [self reset];
+//}
+//
+//-(void)reset{
+//    if ([self isViewLoaded]) {
+//        self.view=nil;
+//        [self viewDidLoad];
+//    }
+//}
 
 @end
