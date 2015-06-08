@@ -8,12 +8,6 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
 //do we want to party?
 BOOL whiskeyMood;
 
@@ -33,11 +27,22 @@ BOOL stirred;
 int drinkType;
 int flavor;
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+@interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *currentQuestion;
 
+
+@end
+
+@implementation ViewController
+- (IBAction)moodYES:(id)sender {
+    
+    whiskeyMood = YES;
+    
     if (whiskeyMood) {
+        
+            //user chooses shot, neat, or cocktail
+            self.currentQuestion.text = @"Select your drink type.";
+        
         switch (drinkType) {
                 
             case 1: //shots
@@ -76,8 +81,23 @@ int flavor;
                 }
                 break;
         }
+        
     }
+    
+}
+- (IBAction)moodNO:(id)sender {
+    
+    //no whiskey tonight
+    whiskeyMood = NO;
+    self.currentQuestion.text = @"Don't order whiskey.";
+}
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.currentQuestion.text = @"Are you in the mood for whiskey?";
+    
 }
 
 
