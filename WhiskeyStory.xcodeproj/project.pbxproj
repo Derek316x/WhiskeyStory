@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6910892A1B2647CD00B6BF67 /* oldfashioned.png in Resources */ = {isa = PBXBuildFile; fileRef = 691089231B2647CD00B6BF67 /* oldfashioned.png */; };
+		6910892B1B2647CD00B6BF67 /* overproof.png in Resources */ = {isa = PBXBuildFile; fileRef = 691089241B2647CD00B6BF67 /* overproof.png */; };
+		6910892C1B2647CD00B6BF67 /* savoryimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 691089251B2647CD00B6BF67 /* savoryimage.png */; };
+		6910892D1B2647CD00B6BF67 /* shotimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 691089261B2647CD00B6BF67 /* shotimage.jpg */; };
+		6910892E1B2647CD00B6BF67 /* smokyimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 691089271B2647CD00B6BF67 /* smokyimage.png */; };
+		6910892F1B2647CD00B6BF67 /* spicyimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 691089281B2647CD00B6BF67 /* spicyimage.png */; };
+		691089301B2647CD00B6BF67 /* whiskeysour.png in Resources */ = {isa = PBXBuildFile; fileRef = 691089291B2647CD00B6BF67 /* whiskeysour.png */; };
 		69D2852F1B251DA500FCCA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D2852E1B251DA500FCCA8F /* main.m */; };
 		69D285321B251DA500FCCA8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D285311B251DA500FCCA8F /* AppDelegate.m */; };
 		69D285351B251DA500FCCA8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D285341B251DA500FCCA8F /* ViewController.m */; };
@@ -28,6 +35,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		691089231B2647CD00B6BF67 /* oldfashioned.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = oldfashioned.png; path = WhiskeyStory/oldfashioned.png; sourceTree = "<group>"; };
+		691089241B2647CD00B6BF67 /* overproof.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overproof.png; path = WhiskeyStory/overproof.png; sourceTree = "<group>"; };
+		691089251B2647CD00B6BF67 /* savoryimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = savoryimage.png; path = WhiskeyStory/savoryimage.png; sourceTree = "<group>"; };
+		691089261B2647CD00B6BF67 /* shotimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = shotimage.jpg; path = WhiskeyStory/shotimage.jpg; sourceTree = "<group>"; };
+		691089271B2647CD00B6BF67 /* smokyimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smokyimage.png; path = WhiskeyStory/smokyimage.png; sourceTree = "<group>"; };
+		691089281B2647CD00B6BF67 /* spicyimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spicyimage.png; path = WhiskeyStory/spicyimage.png; sourceTree = "<group>"; };
+		691089291B2647CD00B6BF67 /* whiskeysour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiskeysour.png; path = WhiskeyStory/whiskeysour.png; sourceTree = "<group>"; };
 		69D285291B251DA500FCCA8F /* WhiskeyStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiskeyStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D2852D1B251DA500FCCA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D2852E1B251DA500FCCA8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +83,13 @@
 				69D285451B251DA500FCCA8F /* WhiskeyStoryTests */,
 				69D2852A1B251DA500FCCA8F /* Products */,
 				69D285541B2556A200FCCA8F /* sweetimage.png */,
+				691089231B2647CD00B6BF67 /* oldfashioned.png */,
+				691089241B2647CD00B6BF67 /* overproof.png */,
+				691089251B2647CD00B6BF67 /* savoryimage.png */,
+				691089261B2647CD00B6BF67 /* shotimage.jpg */,
+				691089271B2647CD00B6BF67 /* smokyimage.png */,
+				691089281B2647CD00B6BF67 /* spicyimage.png */,
+				691089291B2647CD00B6BF67 /* whiskeysour.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,8 +225,15 @@
 			files = (
 				69D285551B2556A200FCCA8F /* sweetimage.png in Resources */,
 				69D285381B251DA500FCCA8F /* Main.storyboard in Resources */,
+				6910892E1B2647CD00B6BF67 /* smokyimage.png in Resources */,
+				6910892B1B2647CD00B6BF67 /* overproof.png in Resources */,
 				69D2853D1B251DA500FCCA8F /* LaunchScreen.xib in Resources */,
 				69D2853A1B251DA500FCCA8F /* Images.xcassets in Resources */,
+				6910892D1B2647CD00B6BF67 /* shotimage.jpg in Resources */,
+				6910892A1B2647CD00B6BF67 /* oldfashioned.png in Resources */,
+				691089301B2647CD00B6BF67 /* whiskeysour.png in Resources */,
+				6910892F1B2647CD00B6BF67 /* spicyimage.png in Resources */,
+				6910892C1B2647CD00B6BF67 /* savoryimage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +448,7 @@
 				69D2854E1B251DA500FCCA8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69D2854F1B251DA500FCCA8F /* Build configuration list for PBXNativeTarget "WhiskeyStoryTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +457,7 @@
 				69D285511B251DA500FCCA8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

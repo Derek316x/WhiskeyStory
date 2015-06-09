@@ -40,6 +40,10 @@ int flavor = 0;
 @property (weak, nonatomic) IBOutlet UIButton *spicyButton;
 @property (weak, nonatomic) IBOutlet UIButton *overproofButton;
 @property (weak, nonatomic) IBOutlet UIImageView *whiskeyImage;
+@property (weak, nonatomic) IBOutlet UIButton *buzzedButton;
+@property (weak, nonatomic) IBOutlet UIButton *wastedButton;
+@property (weak, nonatomic) IBOutlet UIButton *shakenButton;
+@property (weak, nonatomic) IBOutlet UIButton *stirredButton;
 
 
 @end
@@ -49,8 +53,11 @@ int flavor = 0;
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //hide buttons to be used later
     [self hideDrinkType];
     [self hideFlavors];
+    [self hideBuzzedWasted];
+    [self hideShakenStirred];
     
     self.currentQuestion.text = @"Are you in the mood for whiskey?";
     
@@ -65,61 +72,60 @@ int flavor = 0;
     if (whiskeyMood) {
         
             //user chooses shot, neat, or cocktail
-            self.currentQuestion.text = @"Select your drink type.";
+            self.currentQuestion.text = @"What type of drink would you like?";
         
         [self showDrinkType];
         
-        switch (drinkType) {
-                
-            case 1: //shots
-                
-                
-                if (wasted) {
-                    //SHOTS SHOTS SHOTS
-                }
-                else {
-                    // ...shots
-                }
-                
-                break;
-            case 2: //neat
-                
-                switch (flavor) {
-                    case 1: //sweet
-                        break;
-                    case 2: //savory
-                        break;
-                    case 3: //smoky
-                        break;
-                    case 4: //spicy
-                        break;
-                    case 5: //overproof
-                        break;
-                }
-                break;
-            case 3: //cocktail
-                cocktail = YES;
-                [self hideDrinkType];
-                if (shaken) {
-                    //shake drink
-                }
-                else {
-                    //stirred
-                }
-                break;
-        }
+//        switch (drinkType) {
+//                
+//            case 1: //shots
+//                
+//                
+//                if (wasted) {
+//                    //SHOTS SHOTS SHOTS
+//                }
+//                else {
+//                    // ...shots
+//                }
+//                
+//                break;
+//            case 2: //neat
+//                
+//                switch (flavor) {
+//                    case 1: //sweet
+//                        break;
+//                    case 2: //savory
+//                        break;
+//                    case 3: //smoky
+//                        break;
+//                    case 4: //spicy
+//                        break;
+//                    case 5: //overproof
+//                        break;
+//                }
+//                break;
+//            case 3: //cocktail
+//                cocktail = YES;
+//                [self hideDrinkType];
+//                if (shaken) {
+//                    //shake drink
+//                }
+//                else {
+//                    //stirred
+//                }
+//                break;
+//        }
         
     }
     
 }
 - (IBAction)moodNO:(id)sender {
     
-    //hide YES/NO
     [self hideYesNo];
     
     //no whiskey tonight
     whiskeyMood = NO;
-    self.currentQuestion.text = @"Don't order whiskey.";
+    self.currentQuestion.text = @"Have a beer.";
 }
 
 
@@ -128,8 +134,9 @@ int flavor = 0;
     drinkType=1;
     shots = YES;
     [self hideDrinkType];
-    self.currentQuestion.text = @"How hard are you going tonight?.";
-    //show shot options
+    self.currentQuestion.text = @"How hard are you going tonight?";
+
+    [self showBuzzedWasted];
 }
 
 - (IBAction)neatButton:(id)sender {
@@ -144,9 +151,16 @@ int flavor = 0;
 }
 - (IBAction)cocktailButton:(id)sender {
     drinkType=3;
+    cocktail = YES;
+    
+    [self hideDrinkType];
+    [self showShakenStirred];
+    
+    self.currentQuestion.text = @"How would you like your drink prepared?";
+    
 }
 
-//methods when flavor is chosen
+//methods when flavor is chosen for neat drink
 - (IBAction)sweetButton:(id)sender {
     [self hideFlavors];
     
@@ -158,13 +172,81 @@ int flavor = 0;
     
 }
 - (IBAction)savoryButton:(id)sender {
+    [self hideFlavors];
+    
+    self.currentQuestion.text = @"Yamazaki";
+    
+    //shows picture of whiskey
+    self.whiskeyImage.image = [UIImage imageNamed:@"savoryimage.png"];
+    [self.view addSubview:self.whiskeyImage];
+
 }
 - (IBAction)smokyButton:(id)sender {
+    [self hideFlavors];
+    
+    self.currentQuestion.text = @"Lagavulin \n Ardbeg \n Highland Park 12 \n Connemara";
+    
+    //shows picture of whiskey
+    self.whiskeyImage.image = [UIImage imageNamed:@"smokyimage.png"];
+    [self.view addSubview:self.whiskeyImage];
 }
 - (IBAction)spicyButton:(id)sender {
+    [self hideFlavors];
+    
+    self.currentQuestion.text = @"Rye Willitt \n Rittenhouse \n George Dickel Rye \n Wild Turkey 101";
+    
+    //shows picture of whiskey
+    self.whiskeyImage.image = [UIImage imageNamed:@"spicyimage.png"];
+    [self.view addSubview:self.whiskeyImage];
 }
 - (IBAction)overproofButton:(id)sender {
+    [self hideFlavors];
+    
+    self.currentQuestion.text = @"George T Stagg \n Booker's \n Baker's Bourbon";
+    
+    //shows picture of whiskey
+    self.whiskeyImage.image = [UIImage imageNamed:@"overproof.png"];
+    [self.view addSubview:self.whiskeyImage];
 }
+
+//buzzed or wasted
+- (IBAction)buzzedButton:(id)sender {
+    [self hideBuzzedWasted];
+    self.currentQuestion.text = @"Don't do shots.";
+    
+    //show options
+    self.neatButton.hidden=NO;
+    self.cocktailButton.hidden=NO;
+    
+}
+- (IBAction)wastedButton:(id)sender {
+    
+    [self hideBuzzedWasted];
+    self.currentQuestion.text = @"SHOTS! \n SHOTS! \n SHOTS!";
+    
+    self.whiskeyImage.image = [UIImage imageNamed:@"shotimage.jpg"];
+    [self.view addSubview:self.whiskeyImage];
+}
+
+//cocktail options
+- (IBAction)shakenButton:(id)sender {
+    [self hideShakenStirred];
+    
+    self.currentQuestion.text = @"Whiskey Sour";
+    
+    self.whiskeyImage.image = [UIImage imageNamed:@"whiskeysour.png"];
+    [self.view addSubview:self.whiskeyImage];
+    
+}
+- (IBAction)stirredButton:(id)sender {
+    [self hideShakenStirred];
+    
+    self.currentQuestion.text = @"Old Fashioned";
+    
+    self.whiskeyImage.image = [UIImage imageNamed:@"oldfashioned.png"];
+    [self.view addSubview:self.whiskeyImage];
+}
+
 
 
 //methods to show and hide buttons
@@ -173,16 +255,16 @@ int flavor = 0;
     self.moodYES.hidden=YES;
 }
 
--(void)hideDrinkType {
-    self.neatButton.hidden=YES;
-    self.shotButton.hidden=YES;
-    self.cocktailButton.hidden=YES;
-}
-
 -(void)showDrinkType {
     self.neatButton.hidden=NO;
     self.shotButton.hidden=NO;
     self.cocktailButton.hidden=NO;
+}
+
+-(void)hideDrinkType {
+    self.neatButton.hidden=YES;
+    self.shotButton.hidden=YES;
+    self.cocktailButton.hidden=YES;
 }
 
 -(void)showFlavors {
@@ -201,6 +283,27 @@ int flavor = 0;
     self.spicyButton.hidden=YES;
     self.overproofButton.hidden=YES;
 }
+
+-(void)hideBuzzedWasted {
+    self.buzzedButton.hidden=YES;
+    self.wastedButton.hidden=YES;
+}
+
+-(void)showBuzzedWasted {
+    self.buzzedButton.hidden=NO;
+    self.wastedButton.hidden=NO;
+}
+
+-(void)hideShakenStirred {
+    self.shakenButton.hidden=YES;
+    self.stirredButton.hidden=YES;
+}
+
+-(void)showShakenStirred {
+    self.shakenButton.hidden=NO;
+    self.stirredButton.hidden=NO;
+}
+
 
 //Reset app
 //- (IBAction)resetButton:(id)sender {
