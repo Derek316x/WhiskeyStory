@@ -3,6 +3,26 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="WhiskeyTown-Sober.ttf">
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+            <string>WhiskeyTown-Sober</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -16,6 +36,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pwz-2l-Uld">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="54" y="285" width="268" height="217"/>
+                                </variation>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTg-n0-Dqg">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <color key="backgroundColor" red="0.90588235294117647" green="0.81176470588235294" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,30 +93,31 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Whiskey Story" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tl-fO-aBK">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="42"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="85" y="30" width="231" height="42"/>
+                                    <rect key="frame" x="67" y="38" width="266" height="42"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="currentQuestion" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5O-v5-S7K">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="30"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.12549019607843137" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="43" y="138" width="291" height="94"/>
+                                    <rect key="frame" x="40" y="133" width="291" height="94"/>
                                 </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="us9-Ca-rSS">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
-                                <state key="normal" title="YES">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="50"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="yes">
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="85" y="378" width="56" height="30"/>
+                                    <rect key="frame" x="43" y="397" width="108" height="61"/>
                                 </variation>
                                 <connections>
                                     <action selector="moodYES:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="O9W-WH-JKh"/>
@@ -98,12 +125,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwh-bw-Ioz">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="50"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="NO">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="240" y="378" width="46" height="30"/>
+                                    <rect key="frame" x="243" y="401" width="80" height="54"/>
                                 </variation>
                                 <connections>
                                     <action selector="moodNO:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="opf-s5-89U"/>
@@ -111,12 +139,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2h-lt-L9O">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="39"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Neat">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="155" y="335" width="67" height="28"/>
+                                    <rect key="frame" x="145" y="352" width="87" height="49"/>
                                 </variation>
                                 <connections>
                                     <action selector="neatButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FHl-iV-lbd"/>
@@ -124,12 +153,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qh0-PE-1aX">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="39"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Shot">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="154" y="240" width="62" height="30"/>
+                                    <rect key="frame" x="145" y="246" width="80" height="48"/>
                                 </variation>
                                 <connections>
                                     <action selector="shotButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="501-f1-ej1"/>
@@ -137,12 +167,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ba6-hY-bdy">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="39"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Cocktail">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="127" y="431" width="122" height="30"/>
+                                    <rect key="frame" x="109" y="453" width="158" height="56"/>
                                 </variation>
                                 <connections>
                                     <action selector="cocktailButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f7k-pn-IaY"/>
@@ -150,11 +181,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ot-w0-Vl1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="27"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Sweet">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="64" y="285" width="43" height="30"/>
+                                    <rect key="frame" x="64" y="309" width="65" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="sweetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fei-Cd-dwu"/>
@@ -162,11 +195,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DK2-jY-h5I">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="27"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Savory">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="268" y="285" width="48" height="30"/>
+                                    <rect key="frame" x="240" y="309" width="76" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="savoryButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UjA-sp-inz"/>
@@ -174,11 +209,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wi9-fK-xmS">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="27"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Smoky">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="64" y="475" width="48" height="30"/>
+                                    <rect key="frame" x="64" y="499" width="65" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="smokyButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yhb-ZV-tcV"/>
@@ -186,11 +223,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhd-0L-esf">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="27"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Spicy">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="268" y="475" width="39" height="30"/>
+                                    <rect key="frame" x="250" y="499" width="57" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="spicyButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H0S-Xc-daE"/>
@@ -198,30 +237,27 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4A-y5-ZPA">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="27"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="OVERPROOF">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="142" y="378" width="93" height="30"/>
+                                    <rect key="frame" x="135" y="402" width="107" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="overproofButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rFa-iD-lHi"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pwz-2l-Uld">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="54" y="288" width="268" height="217"/>
-                                </variation>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kh-82-2iy">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="40"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Buzzed">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="137" y="278" width="97" height="30"/>
+                                    <rect key="frame" x="128" y="300" width="121" height="47"/>
                                 </variation>
                                 <connections>
                                     <action selector="buzzedButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="F3W-N3-U7y"/>
@@ -229,12 +265,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOb-rV-UgI">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="40"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="WASTED">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="137" y="486" width="112" height="30"/>
+                                    <rect key="frame" x="128" y="510" width="121" height="41"/>
                                 </variation>
                                 <connections>
                                     <action selector="wastedButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gQ8-i3-4YH"/>
@@ -242,12 +279,13 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmK-CL-XHB">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="27"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Stirred">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="240" y="333" width="83" height="30"/>
+                                    <rect key="frame" x="240" y="357" width="83" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="stirredButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g9a-l4-LkA"/>
@@ -255,21 +293,40 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hc4-6C-ge4">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="WhiskeyTown-Sober" family="Whiskey Town" pointSize="26"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="Shaken">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.011764705882352941" green="0.19607843137254902" blue="0.31764705882352939" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="58" y="333" width="83" height="30"/>
+                                    <rect key="frame" x="58" y="357" width="83" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="shakenButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nn5-VV-iO1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eF-d9-Egx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="17"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="158" y="568" width="60" height="30"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="158" y="637" width="60" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="resetButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pRi-A8-aCC"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.88627450980392153" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="pwz-2l-Uld"/>
                                 <exclude reference="yTg-n0-Dqg"/>
                                 <exclude reference="jzM-Ji-nCb"/>
                                 <exclude reference="7fG-kZ-y4E"/>
@@ -286,15 +343,16 @@
                                 <exclude reference="wi9-fK-xmS"/>
                                 <exclude reference="Zhd-0L-esf"/>
                                 <exclude reference="M4A-y5-ZPA"/>
-                                <exclude reference="pwz-2l-Uld"/>
                                 <exclude reference="0kh-82-2iy"/>
                                 <exclude reference="fOb-rV-UgI"/>
                                 <exclude reference="mmK-CL-XHB"/>
                                 <exclude reference="Hc4-6C-ge4"/>
+                                <exclude reference="1eF-d9-Egx"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
+                                <include reference="pwz-2l-Uld"/>
                                 <include reference="yTg-n0-Dqg"/>
                                 <include reference="jzM-Ji-nCb"/>
                                 <include reference="7fG-kZ-y4E"/>
@@ -311,11 +369,11 @@
                                 <include reference="wi9-fK-xmS"/>
                                 <include reference="Zhd-0L-esf"/>
                                 <include reference="M4A-y5-ZPA"/>
-                                <include reference="pwz-2l-Uld"/>
                                 <include reference="0kh-82-2iy"/>
                                 <include reference="fOb-rV-UgI"/>
                                 <include reference="mmK-CL-XHB"/>
                                 <include reference="Hc4-6C-ge4"/>
+                                <include reference="1eF-d9-Egx"/>
                             </mask>
                         </variation>
                     </view>

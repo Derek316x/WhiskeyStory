@@ -14,6 +14,10 @@
 		6910892E1B2647CD00B6BF67 /* smokyimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 691089271B2647CD00B6BF67 /* smokyimage.png */; };
 		6910892F1B2647CD00B6BF67 /* spicyimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 691089281B2647CD00B6BF67 /* spicyimage.png */; };
 		691089301B2647CD00B6BF67 /* whiskeysour.png in Resources */ = {isa = PBXBuildFile; fileRef = 691089291B2647CD00B6BF67 /* whiskeysour.png */; };
+		69A06BC21B26711500DACE26 /* WhiskeyTown-Sober.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A06BC11B26711500DACE26 /* WhiskeyTown-Sober.ttf */; };
+		69A06BC41B26712C00DACE26 /* Whiskey Town-Drunk.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69A06BC31B26712C00DACE26 /* Whiskey Town-Drunk.ttf */; };
+		69A06BC61B2673C100DACE26 /* chawp.otf in Resources */ = {isa = PBXBuildFile; fileRef = 69A06BC51B2673C100DACE26 /* chawp.otf */; };
+		69A06BC81B267F4B00DACE26 /* beer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 69A06BC71B267F4B00DACE26 /* beer.jpg */; };
 		69D2852F1B251DA500FCCA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D2852E1B251DA500FCCA8F /* main.m */; };
 		69D285321B251DA500FCCA8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D285311B251DA500FCCA8F /* AppDelegate.m */; };
 		69D285351B251DA500FCCA8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 69D285341B251DA500FCCA8F /* ViewController.m */; };
@@ -42,6 +46,10 @@
 		691089271B2647CD00B6BF67 /* smokyimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smokyimage.png; path = WhiskeyStory/smokyimage.png; sourceTree = "<group>"; };
 		691089281B2647CD00B6BF67 /* spicyimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spicyimage.png; path = WhiskeyStory/spicyimage.png; sourceTree = "<group>"; };
 		691089291B2647CD00B6BF67 /* whiskeysour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiskeysour.png; path = WhiskeyStory/whiskeysour.png; sourceTree = "<group>"; };
+		69A06BC11B26711500DACE26 /* WhiskeyTown-Sober.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "WhiskeyTown-Sober.ttf"; path = "WhiskeyStory/WhiskeyTown-Sober.ttf"; sourceTree = "<group>"; };
+		69A06BC31B26712C00DACE26 /* Whiskey Town-Drunk.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Whiskey Town-Drunk.ttf"; path = "WhiskeyStory/Whiskey Town-Drunk.ttf"; sourceTree = "<group>"; };
+		69A06BC51B2673C100DACE26 /* chawp.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = chawp.otf; path = WhiskeyStory/chawp.otf; sourceTree = "<group>"; };
+		69A06BC71B267F4B00DACE26 /* beer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = beer.jpg; path = WhiskeyStory/beer.jpg; sourceTree = "<group>"; };
 		69D285291B251DA500FCCA8F /* WhiskeyStory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhiskeyStory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D2852D1B251DA500FCCA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D2852E1B251DA500FCCA8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,8 +96,12 @@
 				691089251B2647CD00B6BF67 /* savoryimage.png */,
 				691089261B2647CD00B6BF67 /* shotimage.jpg */,
 				691089271B2647CD00B6BF67 /* smokyimage.png */,
+				69A06BC31B26712C00DACE26 /* Whiskey Town-Drunk.ttf */,
 				691089281B2647CD00B6BF67 /* spicyimage.png */,
 				691089291B2647CD00B6BF67 /* whiskeysour.png */,
+				69A06BC71B267F4B00DACE26 /* beer.jpg */,
+				69A06BC11B26711500DACE26 /* WhiskeyTown-Sober.ttf */,
+				69A06BC51B2673C100DACE26 /* chawp.otf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,15 +236,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				69D285551B2556A200FCCA8F /* sweetimage.png in Resources */,
+				69A06BC81B267F4B00DACE26 /* beer.jpg in Resources */,
 				69D285381B251DA500FCCA8F /* Main.storyboard in Resources */,
 				6910892E1B2647CD00B6BF67 /* smokyimage.png in Resources */,
 				6910892B1B2647CD00B6BF67 /* overproof.png in Resources */,
 				69D2853D1B251DA500FCCA8F /* LaunchScreen.xib in Resources */,
 				69D2853A1B251DA500FCCA8F /* Images.xcassets in Resources */,
 				6910892D1B2647CD00B6BF67 /* shotimage.jpg in Resources */,
+				69A06BC21B26711500DACE26 /* WhiskeyTown-Sober.ttf in Resources */,
 				6910892A1B2647CD00B6BF67 /* oldfashioned.png in Resources */,
+				69A06BC61B2673C100DACE26 /* chawp.otf in Resources */,
 				691089301B2647CD00B6BF67 /* whiskeysour.png in Resources */,
 				6910892F1B2647CD00B6BF67 /* spicyimage.png in Resources */,
+				69A06BC41B26712C00DACE26 /* Whiskey Town-Drunk.ttf in Resources */,
 				6910892C1B2647CD00B6BF67 /* savoryimage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

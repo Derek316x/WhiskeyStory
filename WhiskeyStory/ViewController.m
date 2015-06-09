@@ -60,6 +60,7 @@ int flavor = 0;
     [self hideShakenStirred];
     
     self.currentQuestion.text = @"Are you in the mood for whiskey?";
+
     
 }
 
@@ -76,46 +77,6 @@ int flavor = 0;
         
         [self showDrinkType];
         
-//        switch (drinkType) {
-//                
-//            case 1: //shots
-//                
-//                
-//                if (wasted) {
-//                    //SHOTS SHOTS SHOTS
-//                }
-//                else {
-//                    // ...shots
-//                }
-//                
-//                break;
-//            case 2: //neat
-//                
-//                switch (flavor) {
-//                    case 1: //sweet
-//                        break;
-//                    case 2: //savory
-//                        break;
-//                    case 3: //smoky
-//                        break;
-//                    case 4: //spicy
-//                        break;
-//                    case 5: //overproof
-//                        break;
-//                }
-//                break;
-//            case 3: //cocktail
-//                cocktail = YES;
-//                [self hideDrinkType];
-//                if (shaken) {
-//                    //shake drink
-//                }
-//                else {
-//                    //stirred
-//                }
-//                break;
-//        }
-        
     }
     
 }
@@ -126,6 +87,10 @@ int flavor = 0;
     //no whiskey tonight
     whiskeyMood = NO;
     self.currentQuestion.text = @"Have a beer.";
+    
+    //shows picture of beer
+    self.whiskeyImage.image = [UIImage imageNamed:@"beer.jpg"];
+    [self.view addSubview:self.whiskeyImage];
 }
 
 
@@ -164,7 +129,7 @@ int flavor = 0;
 - (IBAction)sweetButton:(id)sender {
     [self hideFlavors];
     
-    self.currentQuestion.text = @"Four Roses \n Maker's Mark \n Jameson 18";
+    self.currentQuestion.text = @"Four Roses\nMaker's Mark\nJameson 18";
     
     //shows picture of whiskey
     self.whiskeyImage.image = [UIImage imageNamed:@"sweetimage.png"];
@@ -184,7 +149,7 @@ int flavor = 0;
 - (IBAction)smokyButton:(id)sender {
     [self hideFlavors];
     
-    self.currentQuestion.text = @"Lagavulin \n Ardbeg \n Highland Park 12 \n Connemara";
+    self.currentQuestion.text = @"Lagavulin\n Ardbeg\nHighland Park 12\nConnemara";
     
     //shows picture of whiskey
     self.whiskeyImage.image = [UIImage imageNamed:@"smokyimage.png"];
@@ -193,7 +158,7 @@ int flavor = 0;
 - (IBAction)spicyButton:(id)sender {
     [self hideFlavors];
     
-    self.currentQuestion.text = @"Rye Willitt \n Rittenhouse \n George Dickel Rye \n Wild Turkey 101";
+    self.currentQuestion.text = @"Rye Willitt\nRittenhouse\nGeorge Dickel Rye\nWild Turkey 101";
     
     //shows picture of whiskey
     self.whiskeyImage.image = [UIImage imageNamed:@"spicyimage.png"];
@@ -202,7 +167,7 @@ int flavor = 0;
 - (IBAction)overproofButton:(id)sender {
     [self hideFlavors];
     
-    self.currentQuestion.text = @"George T Stagg \n Booker's \n Baker's Bourbon";
+    self.currentQuestion.text = @"George T Stagg\nBooker's\nBaker's Bourbon";
     
     //shows picture of whiskey
     self.whiskeyImage.image = [UIImage imageNamed:@"overproof.png"];
@@ -222,7 +187,7 @@ int flavor = 0;
 - (IBAction)wastedButton:(id)sender {
     
     [self hideBuzzedWasted];
-    self.currentQuestion.text = @"SHOTS! \n SHOTS! \n SHOTS!";
+    self.currentQuestion.text = @"SHOTS!\nSHOTS!\nSHOTS!";
     
     self.whiskeyImage.image = [UIImage imageNamed:@"shotimage.jpg"];
     [self.view addSubview:self.whiskeyImage];
@@ -247,9 +212,12 @@ int flavor = 0;
     [self.view addSubview:self.whiskeyImage];
 }
 
-
-
 //methods to show and hide buttons
+-(void)showYesNo {
+    self.moodNO.hidden=NO;
+    self.moodYES.hidden=NO;
+}
+
 -(void)hideYesNo {
     self.moodNO.hidden=YES;
     self.moodYES.hidden=YES;
@@ -304,17 +272,29 @@ int flavor = 0;
     self.stirredButton.hidden=NO;
 }
 
+//reset
+- (IBAction)resetButton:(id)sender {
+    
+    [self reset];
+}
 
-//Reset app
-//- (IBAction)resetButton:(id)sender {
-//    [self reset];
-//}
-//
-//-(void)reset{
-//    if ([self isViewLoaded]) {
-//        self.view=nil;
-//        [self viewDidLoad];
-//    }
-//}
+
+-(void)reset {
+    
+    //removes whiskey image
+    [self.whiskeyImage removeFromSuperview];
+    
+    //hide buttons to be used later
+    [self hideDrinkType];
+    [self hideFlavors];
+    [self hideBuzzedWasted];
+    [self hideShakenStirred];
+    
+    //show YES/NO
+    [self showYesNo];
+    
+    self.currentQuestion.text = @"Are you in the mood for whiskey?";
+}
+
 
 @end
