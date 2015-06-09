@@ -282,7 +282,7 @@ int flavor = 0;
 -(void)reset {
     
     //removes whiskey image
-    [self.whiskeyImage removeFromSuperview];
+    self.whiskeyImage.image = nil;
     
     //hide buttons to be used later
     [self hideDrinkType];
